@@ -2,11 +2,11 @@ export default function Message() {
     return (
         <section
             id="message"
-            className="relative h-auto w-full bg-stone-50/60 z-20 flex flex-col text-blue-800 pt-0 pb-14 px-10 lg:px-40"
+            className="relative h-auto w-full bg-white/60 z-20 flex flex-col text-blue-800 pt-0 pb-14 px-10 lg:px-40"
         >
             <div className="flex flex-col gap-3">
                 {/* White Line */}
-                <div className="bg-stone-50 w-full h-8 mb-4"></div>
+                <div className="bg-white w-full h-8 mb-4"></div>
                 {/* End White Line */}
 
                 {/* Title */}
@@ -35,5 +35,5 @@ export default function Message() {
                 {/* End Message */}
             </div>
         </section>
-    )
+    );
 }

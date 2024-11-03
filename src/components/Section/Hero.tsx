@@ -11,11 +11,11 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="w-full relative h-[95vh] flex flex-col rounded-2xl bg-gradient-to-br from-blue-200 via-red-200 to-yellow-200"
+            className="w-full relative h-[95vh] flex flex-col rounded-2xl bg-gradient-to-br from-blue-400 via-blue-100 to-blue-300"
         >
             {/* Header */}
             <div
-                className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-center justify-between py-4 px-8`}
+                className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-center justify-between py-5 px-8`}
             >
                 {/* Logo and Name */}
                 <AppIcon />

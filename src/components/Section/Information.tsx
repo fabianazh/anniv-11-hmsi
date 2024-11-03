@@ -12,7 +12,7 @@ export default function Information() {
             </span>
             {/* End Title */}
             {/* Contents */}
-            <div className="w-full h-72 grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-8">
+            <div className="w-full h-fit lg:h-72 grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-8">
                 <div className="w-full h-full p-5 bg-gradient-to-br from-blue-300 via-blue-200 to-blue-400 rounded-xl shadow flex flex-col gap-1 lg:gap-2 transition-all duration-1000">
                     {/* Card Title */}
                     <span className="block text-lg lg:text-xl font-bold text-blue-800">
@@ -34,7 +34,7 @@ export default function Information() {
                     </div>
                     {/* End Card Button */}
                 </div>
-                <div className="w-full h-full p-5 bg-gradient-to-br from-red-200 via-red-200 to-blue-200 rounded-xl shadow flex flex-col gap-1 lg:gap-2">
+                <div className="w-full h-full p-5 bg-gradient-to-br from-blue-300 via-blue-200 to-blue-400 rounded-xl shadow flex flex-col gap-1 lg:gap-2 transition-all duration-1000">
                     {/* Card Title */}
                     <span className="block text-lg lg:text-xl font-bold text-blue-800">
                         Kontak HMSI
@@ -55,7 +55,7 @@ export default function Information() {
                     </div>
                     {/* End Card Button */}
                 </div>
-                <div className="w-full h-full p-5 bg-gradient-to-br from-blue-300 via-blue-200 to-blue-400 rounded-xl shadow flex flex-col gap-1 lg:gap-2">
+                <div className="w-full h-full p-5 bg-gradient-to-br from-blue-300 via-blue-200 to-blue-400 rounded-xl shadow flex flex-col gap-1 lg:gap-2 transition-all duration-1000">
                     {/* Card Title */}
                     <span className="block text-lg lg:text-xl font-bold text-blue-800">
                         Kapan berdirinya HMSI?

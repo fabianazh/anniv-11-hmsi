@@ -7,13 +7,13 @@ import MainLayout from "@/components/Layout/MainLayout";
 
 export async function generateMetadata() {
     return {
-        title: `Home`,
+        title: `11th Anniversary HMSI`,
         description: "desc..",
         keywords: [
             "HMSI",
             "Nusa Putra",
-            "Nusa Putra University",
             "Universitas Nusa Putra",
+            "Nusa Putra University",
             "Anniversary",
             "HMSI Anniversary",
             "HMSI Nusa Putra Anniversary",
@@ -27,10 +27,18 @@ export async function generateMetadata() {
             "Ulang Tahun HMSI ke-11",
             "Ulang Tahun HMSI 11",
             "HMSI Nusa Putra",
+            "Sistem Informasi",
+            "Jurusan Sistem Informasi",
             "Sistem Informasi Nusa Putra",
+            "Sistem Informasi Nusa Putra Angkatan 24",
+            "Sistem Informasi Nusa Putra Angkatan 2024",
+            "Sistem Informasi Angkatan 2024",
+            "Sistem Informasi Angkatan 24",
+            "Angkatan 24",
+            "Nusa Putra Angkatan 2024",
+            "Jurusan Sistem Informasi Nusa Putra",
             "Himpunan Mahasiswa Sistem Informasi Nusa Putra",
             "Himpunan Mahasiswa Sistem Informasi Universitas Nusa Putra",
-            "Universitas Nusa Putra",
             "Himpunan Mahasiswa Sistem Informasi Universitas Nusa Putra",
             "SI24",
             "SI24A",
@@ -56,7 +64,7 @@ export default function HomePage() {
             <main className="relative w-full h-auto p-3 lg:p-5">
                 <Hero />
                 <Message />
-                <Information />
+                {/* <Information /> */}
             </main>
             <Footer />
         </MainLayout>
