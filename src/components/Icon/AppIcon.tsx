@@ -5,12 +5,12 @@ export default function AppIcon({ size = "sm" }: { size?: "sm" | "lg" }) {
     return (
         <>
             <Link
-                href={`https://this-is-peru.vercel.app`}
+                href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
                 className={`text-black font-extrabold w-fit flex ${
                     size === "sm" ? "text-base" : "text-xl"
                 } ${montserrat.className}`}
             >
-                SI<span className="text-[#fc0b1e]">24</span>.
+                SI<span className="text-blue-600">24</span>.
             </Link>
         </>
     );

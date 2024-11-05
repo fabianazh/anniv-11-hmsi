@@ -1,39 +1,31 @@
+import AppIcon from "../Icon/AppIcon";
+
 export default function Message() {
     return (
         <section
             id="message"
-            className="relative h-auto w-full bg-white/60 z-20 flex flex-col text-blue-800 pt-0 pb-14 px-10 lg:px-40"
+            className="relative h-auto w-full bg-white/60 z-20 flex flex-col lg:flex-row text-blue-800 py-14 px-10 lg:px-10 lg:items-end gap-2"
         >
-            <div className="flex flex-col gap-3">
-                {/* White Line */}
-                <div className="bg-white w-full h-8 mb-4"></div>
-                {/* End White Line */}
-
+            <div className="w-full lg:w-4/12 shrink-0 flex justify-center lg:justify-normal">
                 {/* Title */}
-                <span className="block text-yellow-300 font-medium text-lg lg:text-xl text-center">
-                    From Us
+                <span className="block text-blue-700 font-bold text-xl lg:text-3xl">
+                    Pesan
+                    <span className="lg:block">
+                        <span className="text-yellow-400"> Dari</span> SI24
+                    </span>
                 </span>
                 {/* End Title */}
-
-                {/* Message */}
-                <div className="w-full flex flex-col gap-1">
-                    <span className="block text-lg lg:text-xl text-center font-medium">
-                        &quot;Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Pariatur possimus cumque molestiae et ex
-                        praesentium facilis est, voluptatem deleniti fuga
-                        architecto tenetur id quod minima accusantium quae rerum
-                        quasi repellendus! Rem doloribus, nostrum, libero
-                        consectetur quasi optio maiores distinctio reiciendis
-                        eius autem alias nulla, voluptates dolorum similique.
-                        Perspiciatis cum magni cumque harum atque non, quibusdam
-                        &quot;
-                    </span>
-                    {/* <span className="block text-lg lg:text-xl text-center font-bold">
-                        SI24
-                    </span> */}
-                </div>
-                {/* End Message */}
             </div>
+            {/* Message */}
+            <div className="flex flex-col gap-1">
+                <span className="block text-lg lg:text-2xl text-center font-medium">
+                    &quot;Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Pariatur possimus cumque molestiae et ex praesentium
+                    annasodn asdoasdno aisjoiasd asdjo lroeem ds doloribus,
+                    nostrum, libero&quot;
+                </span>
+            </div>
+            {/* End Message */}
         </section>
     );
 }

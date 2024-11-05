@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { navItems } from '@/constants/component'
-import { AnimatePresence, motion } from 'framer-motion'
-import { perspectiveItemVariant } from '@/constants/variant'
-import AppIcon from '@/components/Icon/AppIcon'
+import Link from "next/link";
+import { navItems } from "@/constants/component";
+import { AnimatePresence, motion } from "framer-motion";
+import { perspectiveItemVariant } from "@/constants/variant";
+import AppIcon from "@/components/Icon/AppIcon";
 
 export default function NavModal({
     isOpen,
     setIsOpen,
 }: {
-    isOpen: boolean
-    setIsOpen: (isopen: boolean) => void
+    isOpen: boolean;
+    setIsOpen: (isopen: boolean) => void;
 }) {
     return (
         <>
@@ -22,20 +22,20 @@ export default function NavModal({
                         opacity: 1,
                         y: 0,
                         transition: {
-                            y: { duration: 0.3, ease: 'easeOut' },
+                            y: { duration: 0.3, ease: "easeOut" },
                             opacity: { duration: 0.4 },
                         },
                     },
                     closed: {
                         opacity: 0,
-                        y: '60px',
+                        y: "60px",
                         transition: {
-                            y: { duration: 0.2, ease: 'easeOut' },
+                            y: { duration: 0.2, ease: "easeOut" },
                             opacity: { duration: 0.4 },
                         },
                     },
                 }}
-                animate={isOpen ? 'open' : 'closed'}
+                animate={isOpen ? "open" : "closed"}
                 initial="closed"
                 className={`fixed bottom-0 lg:bottom-auto flex justify-center lg:top-5 lg:right-5 z-50 h-fit w-full lg:w-auto px-4 lg:px-0`}
             >
@@ -86,16 +86,16 @@ export default function NavModal({
                                     animate="enter"
                                     exit="exit"
                                     initial="initial"
-                                    className={`text-xl lg:text-xl font-black`}
+                                    className={`text-xl lg:text-xl font-semibold`}
                                 >
-                                    This Is Peru
+                                    11th Anniversary HMSI
                                 </motion.span>
                                 <ul className={`flex flex-col gap-2 lg:gap-2`}>
                                     {navItems.map(
                                         (
                                             item: {
-                                                link: string
-                                                text: string
+                                                link: string;
+                                                text: string;
                                             },
                                             index: number
                                         ) => (
@@ -136,7 +136,7 @@ export default function NavModal({
                                     initial="initial"
                                     className="text-sm lg:text-sm font-medium text-stone-700"
                                 >
-                                    &copy; {new Date().getFullYear()} by SI24.{' '}
+                                    &copy; {new Date().getFullYear()} by SI24.{" "}
                                     <span className="block">
                                         All rights reserved.
                                     </span>
@@ -149,5 +149,5 @@ export default function NavModal({
             </motion.div>
             {/* End Nav Container */}
         </>
-    )
+    );
 }

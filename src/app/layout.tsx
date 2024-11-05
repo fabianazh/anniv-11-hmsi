@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { montserrat } from "./fonts";
+import { poppins } from "./fonts";
 import SmoothScroll from "@/components/Other/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
     metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-    keywords: ["App Name"],
+    keywords: ["11th Anniversary HMSI"],
     title: {
-        default: "App Name",
-        template: "%s | App Name",
+        default: "11th Anniversary HMSI",
+        template: "%s | 11th Anniversary HMSI",
     },
     description: "desc..",
     openGraph: {
-        title: "App Name",
+        title: "11th Anniversary HMSI",
         description: "desc..",
         url: process.env.NEXT_PUBLIC_BASE_URL,
-        siteName: "App Name",
+        siteName: "11th Anniversary HMSI",
         locale: "id_ID",
         type: "website",
     },
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={montserrat.className}>
+            <body className={poppins.className}>
                 <Analytics />
                 <SmoothScroll />
                 {children}
