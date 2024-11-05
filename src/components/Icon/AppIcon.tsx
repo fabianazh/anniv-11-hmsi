@@ -10,7 +10,7 @@ export default function AppIcon({ size = "sm" }: { size?: "sm" | "lg" }) {
                     size === "sm" ? "text-base" : "text-xl"
                 } ${montserrat.className}`}
             >
-                SI<span className="text-blue-600">24</span>.
+                SI<span className="text-Blue">24</span>.
             </Link>
         </>
     );

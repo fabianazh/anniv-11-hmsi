@@ -29,7 +29,7 @@ export default function Information() {
                     </span>
                     {/* End Card Content */}
                     {/* Card Button */}
-                    <div className="w-fit inline-block text-blue-700 font-medium text-sm lg:text-base mt-4">
+                    <div className="w-fit inline-block text-Blue font-medium text-sm lg:text-base mt-4">
                         Lihat selengkapnya
                     </div>
                     {/* End Card Button */}
@@ -50,7 +50,7 @@ export default function Information() {
                     </span>
                     {/* End Card Content */}
                     {/* Card Button */}
-                    <div className="w-fit inline-block text-blue-700 font-medium text-sm lg:text-base mt-4">
+                    <div className="w-fit inline-block text-Blue font-medium text-sm lg:text-base mt-4">
                         Lihat selengkapnya
                     </div>
                     {/* End Card Button */}
@@ -71,7 +71,7 @@ export default function Information() {
                     </span>
                     {/* End Card Content */}
                     {/* Card Button */}
-                    <div className="w-fit inline-block text-blue-700 font-medium text-sm lg:text-base mt-4">
+                    <div className="w-fit inline-block text-Blue font-medium text-sm lg:text-base mt-4">
                         Lihat selengkapnya
                     </div>
                     {/* End Card Button */}

@@ -1,7 +1,6 @@
-import Header from "@/components/Partials/Header";
-import Footer from "@/components/Partials/Footer";
 import Hero from "@/components/Section/Hero";
-import Information from "@/components/Section/Information";
+import History from "@/components/Section/History";
+import Wish from "@/components/Section/Wish";
 import Message from "@/components/Section/Message";
 import MainLayout from "@/components/Layout/MainLayout";
 
@@ -50,8 +49,8 @@ export async function generateMetadata() {
         robots: "index, follow",
         canonical: `${process.env.NEXT_PUBLIC_BASE_URL}`,
         openGraph: {
-            title: `Home`,
-            description: "desc..",
+            title: `11th Anniversary HMSI`,
+            description: "11th Anniversary HMSI",
             images: [""],
         },
     };
@@ -60,13 +59,10 @@ export async function generateMetadata() {
 export default function HomePage() {
     return (
         <MainLayout>
-            <Header />
-            <main className="relative w-full h-auto p-3 lg:p-5">
-                <Hero />
-                <Message />
-                {/* <Information /> */}
-            </main>
-            <Footer />
+            <Hero />
+            <Message />
+            <History />
+            <Wish />
         </MainLayout>
     );
 }
