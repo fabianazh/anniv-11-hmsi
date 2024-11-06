@@ -75,18 +75,20 @@ export default function Hero() {
                             <span className="text-xs lg:text-sm">hmsi.nsp</span>
                         </Link>
                         <Link
-                            href={"https://www.instagram.com/hmsi.nsp/"}
+                            href={"https://www.tiktok.com/@hmsi.nsp/"}
                             className="w-fit flex gap-1 items-center"
                         >
                             <BiLogoTiktok className="text-sm lg:text-base" />
-                            <span className="text-xs lg:text-sm">hmsi.nsp</span>
+                            <span className="text-xs lg:text-sm">hmsinsp</span>
                         </Link>
                         <Link
-                            href={"https://www.instagram.com/hmsi.nsp/"}
+                            href={
+                                "https://www.youtube.com/@hmsiuniversitasnusaputra298"
+                            }
                             className="w-fit flex gap-1 items-center"
                         >
                             <BiLogoYoutube className="text-sm lg:text-base" />
-                            <span className="text-xs lg:text-sm">hmsi.nsp</span>
+                            <span className="text-xs lg:text-sm">HMSI UNP</span>
                         </Link>
                     </div>
                     {/* End Contact */}
@@ -115,7 +117,7 @@ export default function Hero() {
                     }}
                     className="bg-Blue w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-20 -bottom-32 lg:-bottom-36 -rotate-[35deg]
                 [--l1-left-init:-7rem] [--l1-left-view:-1rem]
-                lg:[--l1-left-init:-7rem] lg:[--l1-left-view:-1.5rem]"
+                lg:[--l1-left-init:-7rem] lg:[--l1-left-view:-2rem]"
                 ></motion.div>
                 <motion.div
                     initial={{
@@ -137,7 +139,7 @@ export default function Hero() {
                     }}
                     className="bg-Yellow w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-10 -bottom-36 lg:-bottom-44 -rotate-[35deg]
                 [--l2-left-init:-4rem] [--l2-left-view:1.5rem]
-                lg:[--l2-left-init:-8rem] lg:[--l2-left-view:3rem]"
+                lg:[--l2-left-init:-8rem] lg:[--l2-left-view:2.5rem]"
                 ></motion.div>
                 <motion.div
                     initial={{
@@ -159,7 +161,7 @@ export default function Hero() {
                     }}
                     className="bg-yellow-400 w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-0 -bottom-40 lg:-bottom-48 -rotate-[35deg]
                 [--l3-left-init:-4rem] [--l3-left-view:4rem]
-                lg:[--l3-left-init:-12rem] lg:[--l3-left-view:6rem]"
+                lg:[--l3-left-init:-12rem] lg:[--l3-left-view:5.5rem]"
                 ></motion.div>
                 {/* End Left Cards */}
                 {/* Right Cards */}
@@ -183,7 +185,7 @@ export default function Hero() {
                     }}
                     className="bg-Blue w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-20 -bottom-32 lg:-bottom-36 rotate-[35deg]
                 [--r1-right-init:-7rem] [--r1-right-view:-1rem]
-                lg:[--r1-right-init:-7rem] lg:[--r1-right-view:-1.5rem]"
+                lg:[--r1-right-init:-7rem] lg:[--r1-right-view:-2rem]"
                 ></motion.div>
                 <motion.div
                     initial={{
@@ -205,7 +207,7 @@ export default function Hero() {
                     }}
                     className="bg-Yellow w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-10 -bottom-36 lg:-bottom-44 rotate-[35deg]
                 [--r2-right-init:-4rem] [--r2-right-view:1.5rem]
-                lg:[--r2-right-init:-8rem] lg:[--r2-right-view:3rem]"
+                lg:[--r2-right-init:-8rem] lg:[--r2-right-view:2.5rem]"
                 ></motion.div>
                 <motion.div
                     initial={{
@@ -227,7 +229,7 @@ export default function Hero() {
                     }}
                     className="bg-yellow-400 w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-0 -bottom-40 lg:-bottom-48 rotate-[35deg]
                 [--r3-right-init:-4rem] [--r3-right-view:4rem]
-                lg:[--r3-right-init:-12rem] lg:[--r3-right-view:6rem]"
+                lg:[--r3-right-init:-12rem] lg:[--r3-right-view:5.5rem]"
                 ></motion.div>
                 {/* End Right Cards */}
                 {/* End Card Container */}
