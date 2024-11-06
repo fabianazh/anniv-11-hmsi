@@ -12,9 +12,7 @@ export default function MainLayout({
     return (
         <HeaderProvider>
             <Header />
-            <main className="relative w-full h-auto p-4 lg:p-5">
-                {children}
-            </main>
+            <main className="relative w-full h-auto">{children}</main>
             <Footer />
         </HeaderProvider>
     );

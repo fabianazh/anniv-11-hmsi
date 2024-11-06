@@ -86,9 +86,13 @@ export default function NavModal({
                                     animate="enter"
                                     exit="exit"
                                     initial="initial"
-                                    className={`text-xl lg:text-xl font-semibold`}
+                                    className={`text-xl lg:text-xl font-semibold text-black`}
                                 >
-                                    11th Anniversary HMSI
+                                    11th{" "}
+                                    <span className="text-black">
+                                        Anniversary
+                                    </span>{" "}
+                                    HMSI
                                 </motion.span>
                                 <ul className={`flex flex-col gap-2 lg:gap-2`}>
                                     {navItems.map(
@@ -114,7 +118,7 @@ export default function NavModal({
                                                     onClick={() =>
                                                         setIsOpen(!isOpen)
                                                     }
-                                                    className={`text-base lg:text-base cursor-pointer relative pb-[1px] text-black font-medium`}
+                                                    className={`text-base lg:text-base cursor-pointer relative pb-[1px] text-black font-normal`}
                                                     href={item.link}
                                                 >
                                                     {item.text}
