@@ -5,7 +5,7 @@ export const memories: Memory[] = [
         src: "/img/memories/futsal.jpeg",
     },
     {
-        title: "Ngobrol Santai 23-24",
+        title: "Kumpul Santai",
         date: "30 SEPTEMBER 2024",
         src: "/img/memories/kumpul.jpeg",
     },

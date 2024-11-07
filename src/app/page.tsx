@@ -75,8 +75,8 @@ export default function HomePage() {
         <MainLayout>
             <Hero />
             <Message />
-            <div className="relative h-auto w-full bg-stone-50 z-20 flex flex-col lg:flex-row text-Blue py-10 lg:py-14 px-5 lg:px-14 gap-5 lg:gap-8">
-                <div className="w-full lg:w-fit flex flex-col flex-grow justify-center lg:justify-normal gap-5 lg:gap-4">
+            <div className="relative h-auto w-full bg-stone-50 z-20 flex flex-col lg:flex-row text-Blue py-10 lg:py-14 px-5 lg:px-14 gap-8 lg:gap-8">
+                <div className="w-full lg:w-fit flex flex-col flex-grow justify-center lg:justify-normal gap-8 lg:gap-4">
                     <History />
                     <Jargon />
                 </div>

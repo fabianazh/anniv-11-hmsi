@@ -79,7 +79,7 @@ export default function Hero() {
                             <span className="text-xs lg:text-sm">hmsi.nsp</span>
                         </Link>
                         <Link
-                            href={"https://www.tiktok.com/@hmsi.nsp/"}
+                            href={"https://www.tiktok.com/@hmsinsp/"}
                             className="w-fit flex gap-1 items-center"
                         >
                             <BiLogoTiktok className="text-sm lg:text-base" />
