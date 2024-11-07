@@ -7,7 +7,7 @@ export default function History() {
     return (
         <section
             id="history"
-            className="w-full lg:h-full shrink-0 flex flex-col gap-2 bg-white rounded-xl p-4 lg:p-6 shadow-sm"
+            className="w-full lg:h-full flex flex-col gap-2 bg-white rounded-xl p-4 lg:p-6 shadow-sm"
         >
             {/* Title */}
             <span className="block text-Yellow font-bold lg:font-bold text-xl lg:text-3xl text-center lg:text-left">
