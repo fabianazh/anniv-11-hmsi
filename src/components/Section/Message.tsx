@@ -1,3 +1,7 @@
+"use client";
+
+import TextReveal from "@/components/Other/TextReveal";
+
 export default function Message() {
     return (
         <section
@@ -16,12 +20,10 @@ export default function Message() {
             </div>
             {/* Message */}
             <div className="flex flex-col gap-1">
-                <span className="block text-base lg:text-lg text-center lg:text-justify font-medium">
-                    &quot;Happy Anniversary HMSI yang ke-11 dari kami, Mahasiswa
-                    Sistem Informasi Angakatan 24. Kami bangga menjadi bagian
-                    dari himpunan ini dan berterima kasih atas semua kesempatan,
-                    momen dan ilmu yang diberikan. Sukses selalu HMSI!!&quot;
-                </span>
+                <TextReveal
+                    text={`"Happy Anniversary HMSI yang ke-11 dari kami, Mahasiswa Sistem Informasi Angakatan 24. Kami bangga menjadi bagian dari himpunan ini dan berterima kasih atas semua kesempatan, momen dan ilmu yang diberikan. Sukses selalu HMSI!!"`}
+                    className="block text-base lg:text-lg text-center lg:text-justify font-medium"
+                />
             </div>
             {/* End Message */}
         </section>

@@ -3,6 +3,8 @@
 import Chip from "@/components/Other/Chip";
 import { memories } from "@/constants/model";
 import Image from "next/image";
+import TextReveal from "@/components/Other/TextReveal";
+import { motion } from "framer-motion";
 
 export default function Memories() {
     return (
@@ -18,7 +20,7 @@ export default function Memories() {
             </span>
             {/* End Title */}
             {/* Content */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 px-10 lg:px-0">
                 {memories.map((memory: Memory, index: number) => (
                     <div
                         key={index}
@@ -33,7 +35,7 @@ export default function Memories() {
                                 className="w-full h-full object-contain"
                             />
                         </div>
-                        <div className="w-full h-fit absolute bottom-0 left-0 flex flex-col p-3.5 pt-16 bg-gradient-to-t from-Blue to-transparent">
+                        <div className="w-full h-fit absolute bottom-0 left-0 flex flex-col p-3.5 pt-24 lg:pt-16 bg-gradient-to-t from-Blue to-transparent">
                             <span className="text-white font-semibold text-sm lg:text-base">
                                 {memory.title}
                             </span>
@@ -44,14 +46,28 @@ export default function Memories() {
                     </div>
                 ))}
                 <div className="w-full h-full shrink-0 lg:shrink flex flex-col text-Blue justify-center lg:justify-end px-2 py-6 lg:py-3 lg:px-3 gap-1">
-                    <span className="font-medium">
-                        &quot;Bagian terbaik tentang foto adalah ketika
-                        orang-orang di foto itu berubah, memori yang ada di
-                        dalamnya tidak akan berubah.&quot;
-                    </span>
-                    <span className="font-semibold text-sm">
+                    <TextReveal
+                        text={`"Bagian terbaik tentang foto adalah ketika orang-orang di foto itu berubah, memori yang ada di dalamnya tidak akan berubah."`}
+                        className="font-medium"
+                    />
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 0.3,
+                                ease: "easeOut",
+                                delay: 0.2,
+                            },
+                        }}
+                        viewport={{
+                            amount: "some",
+                            once: true,
+                        }}
+                        className="font-semibold text-sm"
+                    >
                         <span className="text-Yellow">Andy</span> Warhol.
-                    </span>
+                    </motion.span>
                 </div>
             </div>
             {/* End Content */}

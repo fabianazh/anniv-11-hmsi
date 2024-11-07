@@ -1,3 +1,7 @@
+"use client";
+
+import TextReveal from "@/components/Other/TextReveal";
+
 export default function Wish() {
     return (
         <section
@@ -16,14 +20,10 @@ export default function Wish() {
             </div>
             {/* Wish */}
             <div className="flex flex-col gap-1">
-                <span className="block text-base lg:text-lg text-center lg:text-justify font-medium">
-                    &quot;Setiap detik yang kita lalui adalah perjalanan penuh
-                    momen berharga, bukti pencapaian luar biasa yang terukir
-                    dari kekuatan dan solidaritas kita. Mari terus menjaga
-                    semangat persatuan, saling mendorong untuk maju, dan
-                    berinovasi demi kemajuan himpunan tercinta. Bersama, tidak
-                    ada yang tidak mungkin!!&quot;
-                </span>
+                <TextReveal
+                    text={`"Setiap detik yang kita lalui adalah perjalanan penuh momen berharga, bukti pencapaian luar biasa yang terukir dari kekuatan dan solidaritas kita. Mari terus menjaga semangat persatuan, saling mendorong untuk maju, dan berinovasi demi kemajuan himpunan tercinta. Bersama, tidak ada yang tidak mungkin!!"`}
+                    className="block text-base lg:text-lg text-center lg:text-justify font-medium"
+                />
             </div>
             {/* End Wish */}
         </section>
