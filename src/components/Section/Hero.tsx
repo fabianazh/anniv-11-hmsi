@@ -15,7 +15,7 @@ export default function Hero() {
     return (
         <section id="home" className="relative w-full h-fit p-4 lg:p-5">
             {/* Hero Container */}
-            <div className="w-full relative h-[75vh] lg:h-[95vh] flex flex-col rounded-2xl bg-gradient-to-b shadow-sm from-stone-100 via-stone-50 to-stone-200 overflow-hidden">
+            <div className="w-full relative h-[75vh] lg:h-[95vh] flex flex-col rounded-2xl bg-gradient-to-b shadow from-blue-50 via-white to-blue-100 overflow-hidden">
                 {/* Header */}
                 <header
                     className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-center justify-between py-3 lg:py-5 px-5 lg:px-8`}
@@ -35,7 +35,7 @@ export default function Hero() {
                 {/* End Header */}
 
                 {/* Content */}
-                <div className="w-full flex flex-col relative text-Blue gap-2 lg:gap-5 z-0 px-3 lg:px-40 py-28 items-center">
+                <div className="w-full flex flex-col relative text-Blue gap-2 lg:gap-5 z-0 px-3 lg:px-40 py-24 items-center">
                     {/* Logo */}
                     <div className="w-full p-4 h-20 lg:h-28 flex gap-4 justify-center">
                         <Image
