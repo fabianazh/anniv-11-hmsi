@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export default function NavLink({
     href,
@@ -10,7 +10,9 @@ export default function NavLink({
     return (
         <Link
             className={`group text-[0.8em] cursor-pointer relative text-Blue font-medium`}
-            href={href}
+            to={href}
+            smooth={true}
+            spy={true}
         >
             {children}
             <div

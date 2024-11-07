@@ -1,18 +1,26 @@
 export const navItems = [
     {
-        link: "home",
-        text: "Home",
+        link: "beranda",
+        text: "Beranda",
     },
     {
-        link: "information",
-        text: "Informasi",
+        link: "message",
+        text: "Pesan",
     },
     {
-        link: "announcement",
-        text: "Pengumuman",
+        link: "history",
+        text: "Sejarah",
     },
     {
-        link: "gallery",
-        text: "Galeri",
+        link: "video",
+        text: "Video",
+    },
+    {
+        link: "memories",
+        text: "Memori",
+    },
+    {
+        link: "wish",
+        text: "Harapan",
     },
 ];

@@ -14,7 +14,7 @@ export default function History() {
             </span>
             {/* End Title */}
             {/* Content */}
-            <span className="block text-base lg:text-lg text-justify font-medium">
+            <span className="block text-base lg:text-lg text-left font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur possimus cumque molestiae et ex praesentium annasodn
                 asdoasdno aisjoiasd asdjo lroeem ds doloribus, nostrum, libero
