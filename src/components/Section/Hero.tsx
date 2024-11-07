@@ -6,7 +6,11 @@ import NavButton from "@/components/Partials/NavButton";
 import { useHeader } from "@/context/SettingsContext";
 import Image from "next/image";
 import Link from "next/link";
-import { BiLogoInstagram, BiLogoTiktok, BiLogoYoutube } from "react-icons/bi";
+import {
+    BiLogoInstagramAlt,
+    BiLogoTiktok,
+    BiLogoYoutube,
+} from "react-icons/bi";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -71,7 +75,7 @@ export default function Hero() {
                             href={"https://www.instagram.com/hmsi.nsp/"}
                             className="w-fit flex gap-1 items-center"
                         >
-                            <BiLogoInstagram className="text-sm lg:text-base" />
+                            <BiLogoInstagramAlt className="text-sm lg:text-base" />
                             <span className="text-xs lg:text-sm">hmsi.nsp</span>
                         </Link>
                         <Link
