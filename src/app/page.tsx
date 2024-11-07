@@ -6,11 +6,13 @@ import MainLayout from "@/components/Layout/MainLayout";
 import Jargon from "@/components/Section/Jargon";
 import Video from "@/components/Section/Video";
 import Memories from "@/components/Section/Memories";
+import { memories } from "@/constants/model";
 
 export async function generateMetadata() {
     return {
         title: `11th Anniversary HMSI`,
-        description: "desc..",
+        description:
+            "Happy Anniversary HMSI yang ke-11 dari kami, Mahasiswa Sistem Informasi Angakatan 24. Kami bangga menjadi bagian dari himpunan ini dan berterima kasih atas semua kesempatan, momen dan ilmu yang diberikan. Sukses selalu HMSI!!",
         keywords: [
             "HMSI",
             "Nusa Putra",
@@ -30,6 +32,7 @@ export async function generateMetadata() {
             "Ulang Tahun HMSI 11",
             "HMSI Nusa Putra",
             "Sistem Informasi",
+            "Information System",
             "Jurusan Sistem Informasi",
             "Sistem Informasi Nusa Putra",
             "Sistem Informasi Nusa Putra Angkatan 24",
@@ -48,13 +51,21 @@ export async function generateMetadata() {
             "SI24E",
             "SI24F",
             "SI24I",
+            "Berani melangkah, Mengukir Sejarah",
+            "Berani melangkah , Mengukir Sejarah",
+            "Analisis Sistemnya, Berikan Informasinya",
+            "Analisis Sistemnya , Berikan Informasinya",
+            "SI Berprestasi",
+            "SI , Berpestasi",
+            "SItizen",
         ],
         robots: "index, follow",
         canonical: `${process.env.NEXT_PUBLIC_BASE_URL}`,
         openGraph: {
             title: `11th Anniversary HMSI`,
-            description: "11th Anniversary HMSI",
-            images: [""],
+            description:
+                "Happy Anniversary HMSI yang ke-11 dari kami, Mahasiswa Sistem Informasi Angakatan 24. Kami bangga menjadi bagian dari himpunan ini dan berterima kasih atas semua kesempatan, momen dan ilmu yang diberikan. Sukses selalu HMSI!!",
+            images: memories.map((memory) => ({ url: memory.src })),
         },
     };
 }
