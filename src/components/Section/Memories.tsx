@@ -57,7 +57,7 @@ export default function Memories() {
                             transition: {
                                 duration: 0.3,
                                 ease: "easeOut",
-                                delay: 0.2,
+                                delay: 1.2,
                             },
                         }}
                         viewport={{
