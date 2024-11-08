@@ -1,6 +1,6 @@
 export const navItems = [
     {
-        link: "beranda",
+        link: "home",
         text: "Beranda",
     },
     {
