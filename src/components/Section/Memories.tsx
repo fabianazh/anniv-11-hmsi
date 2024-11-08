@@ -45,7 +45,7 @@ export default function Memories() {
                         </div>
                     </div>
                 ))}
-                <div className="w-full h-full shrink-0 lg:shrink flex flex-col text-Blue justify-center lg:justify-end px-2 py-6 lg:py-3 lg:px-3 gap-1">
+                <div className="w-full h-full shrink-0 lg:shrink flex flex-col text-Blue items-center lg:items-start justify-center lg:justify-end px-2 py-6 lg:py-3 lg:px-3 gap-1">
                     <TextReveal
                         text={`"Bagian terbaik tentang foto adalah ketika orang-orang di foto itu berubah, memori yang ada di dalamnya tidak akan berubah."`}
                         className="font-medium"
