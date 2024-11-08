@@ -9,7 +9,7 @@ export default function NavLink({
 }) {
     return (
         <Link
-            className={`group text-[0.8em] cursor-pointer relative text-Blue font-medium`}
+            className={`group text-[0.8em] 2xl:text-sm cursor-pointer relative text-Blue font-medium`}
             to={href}
             smooth={true}
             spy={true}

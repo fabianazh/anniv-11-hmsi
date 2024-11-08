@@ -22,7 +22,7 @@ export default function Wish() {
             <div className="flex flex-col gap-1">
                 <TextReveal
                     text={`"Setiap detik yang kita lalui adalah perjalanan penuh momen berharga, bukti pencapaian luar biasa yang terukir dari kekuatan dan solidaritas kita. Mari terus menjaga semangat persatuan, saling mendorong untuk maju, dan berinovasi demi kemajuan himpunan tercinta. Bersama, tidak ada yang tidak mungkin!!"`}
-                    className="block text-base lg:text-lg text-center lg:text-justify font-medium"
+                    className="block text-base lg:text-lg 2xl:text-xl text-center lg:text-left font-medium"
                 />
             </div>
             {/* End Wish */}

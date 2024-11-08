@@ -23,6 +23,7 @@ export async function generateMetadata() {
             "HMSI Nusa Putra Anniversary",
             "HMSI Nusa Putra University Anniversary",
             "Anniversary HMSI",
+            "Anniv HMSI",
             "11th Anniversary HMSI",
             "11 th Anniversary HMSI",
             "Anniversary HMSI ke-11",
