@@ -48,7 +48,7 @@ export default function Memories() {
                 <div className="w-full h-full shrink-0 lg:shrink flex flex-col text-Blue items-center lg:items-start justify-center lg:justify-end px-2 py-6 lg:py-3 lg:px-3 gap-1">
                     <TextReveal
                         text={`"Bagian terbaik tentang foto adalah ketika orang-orang di foto itu berubah, memori yang ada di dalamnya tidak akan berubah."`}
-                        className="font-medium"
+                        className="font-medium 2xl:text-lg text-center lg:text-left"
                     />
                     <motion.span
                         initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ export default function Memories() {
                             amount: "some",
                             once: true,
                         }}
-                        className="font-semibold text-sm"
+                        className="font-semibold text-sm 2xl:text-lg"
                     >
                         <span className="text-Yellow">Andy</span> Warhol.
                     </motion.span>

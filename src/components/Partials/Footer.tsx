@@ -39,7 +39,7 @@ export default function Footer() {
                                     }}
                                 >
                                     <Link
-                                        className={`group text-[0.8em] pb-[0.5px] cursor-pointer relative text-black font-medium`}
+                                        className={`group text-[0.8em] 2xl:text-sm pb-[0.5px] cursor-pointer relative text-black font-medium`}
                                         to={`${navItem.link}`}
                                         smooth={true}
                                         spy={true}
@@ -55,7 +55,7 @@ export default function Footer() {
                     </ul>
                 </nav>
                 <div className={`flex items-center justify-between gap-6`}>
-                    <span className="font-medium lg:font-semibold text-xs text-stone-600">
+                    <span className="font-medium lg:font-semibold text-xs 2xl:text-sm text-stone-600">
                         ©{currentYear} by SI24. All rights reserved.
                     </span>
                 </div>
