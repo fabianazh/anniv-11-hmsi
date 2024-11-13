@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="w-full relative h-[75vh] lg:h-[95vh] flex flex-col rounded-2xl bg-gradient-to-b shadow from-blue-50 via-white to-blue-100 overflow-hidden">
                 {/* Header */}
                 <header
-                    className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-center justify-between py-3 lg:py-5 px-5 lg:px-8`}
+                    className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-start justify-between py-5 px-5 lg:px-8`}
                 >
                     {/* Logo and Name */}
                     <AppIcon />
@@ -107,6 +107,7 @@ export default function Hero() {
 
                 {/* Card Container */}
                 {/* Left Cards */}
+                {/* Left Blue */}
                 <motion.div
                     initial={{
                         left: "var(--l1-left-init)",
@@ -130,6 +131,8 @@ export default function Hero() {
                 lg:[--l1-left-init:-7rem] lg:[--l1-left-view:-2rem]
                 2xl:[--l1-left-init:-7rem] 2xl:[--l1-left-view:0rem]"
                 ></motion.div>
+                {/* End Left Blue */}
+                {/* Left Orange */}
                 <motion.div
                     initial={{
                         left: "var(--l2-left-init)",
@@ -153,6 +156,8 @@ export default function Hero() {
                 lg:[--l2-left-init:-8rem] lg:[--l2-left-view:2.5rem]
                 2xl:[--l2-left-init:-8rem] 2xl:[--l2-left-view:4.5rem]"
                 ></motion.div>
+                {/* End Left Orange */}
+                {/* Left Yellow */}
                 <motion.div
                     initial={{
                         left: "var(--l3-left-init)",
@@ -176,8 +181,10 @@ export default function Hero() {
                 lg:[--l3-left-init:-12rem] lg:[--l3-left-view:5.5rem]
                 2xl:[--l3-left-init:-12rem] 2xl:[--l3-left-view:7.5rem]"
                 ></motion.div>
+                {/* End Left Yellow */}
                 {/* End Left Cards */}
                 {/* Right Cards */}
+                {/* Right Blue */}
                 <motion.div
                     initial={{
                         right: "var(--r1-right-init)",
@@ -201,6 +208,8 @@ export default function Hero() {
                 lg:[--r1-right-init:-7rem] lg:[--r1-right-view:-2rem]
                 2xl:[--r1-right-init:-7rem] 2xl:[--r1-right-view:0rem]"
                 ></motion.div>
+                {/* End Right Blue */}
+                {/* Right Orange */}
                 <motion.div
                     initial={{
                         right: "var(--r2-right-init)",
@@ -219,11 +228,13 @@ export default function Hero() {
                         amount: "some",
                         once: true,
                     }}
-                    className="bg-Yellow w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-10 -bottom-36 lg:-bottom- 2xl:-bottom-36 rotate-[35deg]
+                    className="bg-Yellow w-32 lg:w-48 h-60 lg:h-72 rounded-xl shadow absolute z-10 -bottom-36 lg:-bottom-44 2xl:-bottom-36 rotate-[35deg]
                 [--r2-right-init:-4rem] [--r2-right-view:0.5rem]
                 lg:[--r2-right-init:-8rem] lg:[--r2-right-view:2.5rem]
                 2xl:[--r2-right-init:-8rem] 2xl:[--r2-right-view:4.5rem]"
                 ></motion.div>
+                {/* End Right Orange */}
+                {/* Right Yellow */}
                 <motion.div
                     initial={{
                         right: "var(--r3-right-init)",
@@ -247,6 +258,7 @@ export default function Hero() {
                 lg:[--r3-right-init:-12rem] lg:[--r3-right-view:5.5rem]
                 2xl:[--r3-right-init:-12rem] 2xl:[--r3-right-view:7.5rem]"
                 ></motion.div>
+                {/* End Right Yellow */}
                 {/* End Right Cards */}
                 {/* End Card Container */}
             </div>

@@ -1,4 +1,4 @@
-import { montserrat } from "@/app/fonts";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AppIcon({ size = "sm" }: { size?: "sm" | "lg" }) {
@@ -6,13 +6,15 @@ export default function AppIcon({ size = "sm" }: { size?: "sm" | "lg" }) {
         <>
             <Link
                 href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
-                className={`text-black font-extrabold w-fit flex ${
-                    size === "sm"
-                        ? "text-base 2xl:text-lg"
-                        : "text-xl 2xl:text-2xl"
-                } ${montserrat.className}`}
+                className={`flex w-fit h-fit`}
             >
-                SI<span className="text-Blue">24</span>.
+                <Image
+                    src={"/img/logo/si24.png"}
+                    alt="SI24 Logo"
+                    width={400}
+                    height={400}
+                    className="h-8 lg:h-10 2xl:h-12 w-fit"
+                />
             </Link>
         </>
     );
