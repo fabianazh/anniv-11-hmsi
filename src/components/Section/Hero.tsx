@@ -39,7 +39,7 @@ export default function Hero() {
                 {/* End Header */}
 
                 {/* Content */}
-                <div className="w-full flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-Blue gap-2 lg:gap-5 z-0 px-3 lg:px-40 items-center">
+                <div className="w-full flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-Blue gap-1 lg:gap-5 z-0 px-3 lg:px-40 items-center">
                     {/* Logo */}
                     <div className="w-full p-4 h-20 lg:h-28 2xl:h-32 flex gap-4 justify-center">
                         <Image
@@ -59,7 +59,7 @@ export default function Hero() {
                     </div>
                     {/* End Logo */}
                     {/* Text */}
-                    <div className="w-full flex flex-col text-2xl lg:text-5xl 2xl:text-6xl font-semibold text-center gap-1 lg:gap-2.5">
+                    <div className="w-full flex flex-col text-2xl lg:text-5xl 2xl:text-6xl font-semibold text-center gap-1 lg:gap-2.5 mb-1 lg:mb-0">
                         <span>
                             Happy 11th{" "}
                             <span className="text-Yellow">Anniversary</span>{" "}
