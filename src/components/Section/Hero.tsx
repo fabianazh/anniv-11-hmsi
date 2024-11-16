@@ -22,7 +22,19 @@ export default function Hero() {
             {/* Hero Container */}
             <div className="w-full relative h-[75vh] lg:h-[95vh] flex flex-col rounded-2xl bg-gradient-to-b shadow from-blue-50 via-white to-blue-100 overflow-hidden">
                 {/* Header */}
-                <header
+                <motion.header
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                        opacity: 1,
+                        transition: {
+                            duration: 0.8,
+                            delay: 1,
+                        },
+                    }}
+                    viewport={{
+                        amount: "some",
+                        once: true,
+                    }}
                     className={`w-full h-fit relative top-0 left-0 z-30 transition-all duration-200 flex items-start justify-between py-5 px-5 lg:px-8`}
                 >
                     {/* Logo and Name */}
@@ -36,7 +48,7 @@ export default function Hero() {
                         containerClassName="flex lg:hidden"
                     />
                     {/* End Navbar */}
-                </header>
+                </motion.header>
                 {/* End Header */}
 
                 {/* Content */}
