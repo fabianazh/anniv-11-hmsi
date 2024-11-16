@@ -12,6 +12,7 @@ import {
     BiLogoYoutube,
 } from "react-icons/bi";
 import { motion } from "framer-motion";
+import TextReveal from "@/components/Other/TextReveal";
 
 export default function Hero() {
     const { isNavOpen, setIsNavOpen } = useHeader();
@@ -39,38 +40,95 @@ export default function Hero() {
                 {/* End Header */}
 
                 {/* Content */}
-                <div className="w-full flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-Blue gap-1 lg:gap-5 z-0 px-3 lg:px-40 items-center">
+                <motion.div className="w-full flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-Blue gap-1 lg:gap-5 z-0 px-3 lg:px-40 items-center">
                     {/* Logo */}
                     <div className="w-full p-4 h-20 lg:h-28 2xl:h-32 flex gap-4 justify-center">
-                        <Image
-                            src="/img/logo/npu.png"
-                            alt="NPU Logo"
-                            width={300}
-                            height={300}
-                            className="w-fit h-full"
-                        />
-                        <Image
-                            src="/img/logo/hmsi.png"
-                            alt="HMSI Logo"
-                            width={300}
-                            height={300}
-                            className="w-fit h-full"
-                        />
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{
+                                opacity: 1,
+                                transition: {
+                                    duration: 0.8,
+                                    delay: 1,
+                                },
+                            }}
+                            viewport={{
+                                amount: "some",
+                                once: true,
+                            }}
+                        >
+                            <Image
+                                src="/img/logo/npu.png"
+                                alt="NPU Logo"
+                                width={300}
+                                height={300}
+                                className="w-fit h-full"
+                            />
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{
+                                opacity: 1,
+                                transition: {
+                                    duration: 0.8,
+                                    delay: 1.6,
+                                },
+                            }}
+                            viewport={{
+                                amount: "some",
+                                once: true,
+                            }}
+                        >
+                            <Image
+                                src="/img/logo/hmsi.png"
+                                alt="HMSI Logo"
+                                width={300}
+                                height={300}
+                                className="w-fit h-full"
+                            />
+                        </motion.div>
                     </div>
                     {/* End Logo */}
                     {/* Text */}
                     <div className="w-full flex flex-col text-2xl lg:text-5xl 2xl:text-6xl font-semibold text-center gap-1 lg:gap-2.5 mb-1 lg:mb-0">
-                        <span>
-                            Happy 11th{" "}
-                            <span className="text-Yellow">Anniversary</span>{" "}
-                        </span>{" "}
-                        <span className="block">
-                            HMSI Nusa Putra University
-                        </span>
+                        <div>
+                            <TextReveal
+                                text="Happy 11th"
+                                duration={0.4}
+                                wordClassName="mr-1 lg:mr-2"
+                            />
+                            <TextReveal
+                                text="Anniversary"
+                                index={0.4}
+                                duration={0.4}
+                                className="text-Yellow"
+                                wordClassName="mr-1 lg:mr-2"
+                            />
+                        </div>
+                        <TextReveal
+                            index={0.8}
+                            duration={0.8}
+                            text="HMSI Nusa Putra University"
+                            wordClassName="mr-1 lg:mr-2"
+                        />
                     </div>
                     {/* End Text */}
                     {/* Contact */}
-                    <div className="w-fit flex bg-Blue text-white px-6 lg:px-20 py-1.5 gap-5 lg:gap-8 justify-center items-center rounded-lg">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 0.8,
+                                delay: 2,
+                            },
+                        }}
+                        viewport={{
+                            amount: "some",
+                            once: true,
+                        }}
+                        className="w-fit flex bg-Blue text-white px-6 lg:px-20 py-1.5 gap-5 lg:gap-8 justify-center items-center rounded-lg"
+                    >
                         <Link
                             href={"https://www.instagram.com/hmsi.nsp/"}
                             className="w-fit flex gap-1 items-center text-white hover:text-stone-300 transition-colors duration-300"
@@ -100,9 +158,9 @@ export default function Hero() {
                                 HMSI UNP
                             </span>
                         </Link>
-                    </div>
+                    </motion.div>
                     {/* End Contact */}
-                </div>
+                </motion.div>
                 {/* End Content */}
 
                 {/* Card Container */}
@@ -119,7 +177,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.05,
+                            delay: 2.15,
                         },
                     }}
                     viewport={{
@@ -144,7 +202,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.1,
+                            delay: 2.2,
                         },
                     }}
                     viewport={{
@@ -169,7 +227,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.15,
+                            delay: 2.25,
                         },
                     }}
                     viewport={{
@@ -196,7 +254,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.05,
+                            delay: 2.15,
                         },
                     }}
                     viewport={{
@@ -221,7 +279,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.1,
+                            delay: 2.2,
                         },
                     }}
                     viewport={{
@@ -246,7 +304,7 @@ export default function Hero() {
                         transition: {
                             duration: 0.4,
                             ease: "easeOut",
-                            delay: 0.15,
+                            delay: 2.25,
                         },
                     }}
                     viewport={{

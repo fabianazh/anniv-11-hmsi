@@ -1,21 +1,21 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 export default function TextReveal({
     text,
     className,
-    wordClassName = 'mr-1',
+    wordClassName = "mr-1",
     index = 0,
     duration = 0.2,
     fromButton = false,
 }: {
-    text: string
-    className?: string
-    wordClassName?: string
-    index?: number
-    duration?: number
-    fromButton?: boolean
+    text: string;
+    className?: string;
+    wordClassName?: string;
+    index?: number;
+    duration?: number;
+    fromButton?: boolean;
 }) {
-    const words = text.split(' ')
+    const words = text.split(" ");
 
     return (
         <span className={className}>
@@ -29,12 +29,11 @@ export default function TextReveal({
                         y: 0,
                         transition: {
                             duration: duration,
-                            ease: 'easeOut',
                             delay: index + i * 0.05,
                         },
                     }}
                     viewport={{
-                        amount: 'some',
+                        amount: "some",
                         once: true,
                     }}
                 >
@@ -42,5 +41,5 @@ export default function TextReveal({
                 </motion.span>
             ))}
         </span>
-    )
+    );
 }
