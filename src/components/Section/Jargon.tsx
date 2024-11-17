@@ -7,7 +7,7 @@ export default function Jargon() {
         <>
             <section
                 id="jargon"
-                className="w-full relative overflow-hidden shrink-0 flex flex-col gap-2 lg:gap-4 bg-white rounded-xl p-4 lg:p-6 shadow-sm z-0"
+                className="w-full relative overflow-hidden shrink-0 flex flex-col gap-2 lg:gap-4 bg-white rounded-xl p-4 lg:p-4 shadow-sm z-0"
             >
                 {/* Left Card */}
                 <div className="absolute -left-14 lg:-left-10 2xl:-left-6 -bottom-14 -rotate-[35deg] w-20 h-40 bg-Yellow shadow"></div>

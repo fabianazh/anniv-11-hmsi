@@ -187,7 +187,7 @@ export default function Hero() {
                         left: "var(--l1-left-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.15,
                         },
@@ -212,7 +212,7 @@ export default function Hero() {
                         left: "var(--l2-left-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.2,
                         },
@@ -237,7 +237,7 @@ export default function Hero() {
                         left: "var(--l3-left-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.25,
                         },
@@ -264,7 +264,7 @@ export default function Hero() {
                         right: "var(--r1-right-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.15,
                         },
@@ -289,7 +289,7 @@ export default function Hero() {
                         right: "var(--r2-right-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.2,
                         },
@@ -314,7 +314,7 @@ export default function Hero() {
                         right: "var(--r3-right-view)",
                         opacity: 1,
                         transition: {
-                            duration: 0.4,
+                            duration: 0.6,
                             ease: "easeOut",
                             delay: 2.25,
                         },

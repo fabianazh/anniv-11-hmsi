@@ -18,7 +18,7 @@ export default function History() {
             {/* End Title */}
             {/* Content */}
             <TextReveal
-                text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus cumque molestiae et ex praesentium annasodn asdoasdno aisjoiasd asdjo lroeem ds doloribus, nostrum, libero Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga cumque doloremque nostrum similique molestias!`}
+                text={`Himpunan Mahasiswa Sistem Informasi (HMSI) Nusa Putra didirikan pada tanggal 7 Oktober 2014. Sebelum terbentuknya HMSI, organisasi mahasiswa di jurusan ini merupakan gabungan dari dua program studi, yaitu Teknik Informatika dan Sistem Informasi, dengan nama SITI. Namun, seiring berjalannya waktu, mahasiswa Sistem Informasi memutuskan untuk membentuk himpunannya sendiri.`}
                 className="block text-base lg:text-lg 2xl:text-xl text-left font-medium"
             />
             {/* End Content */}

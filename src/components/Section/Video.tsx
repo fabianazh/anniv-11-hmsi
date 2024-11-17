@@ -14,18 +14,8 @@ export default function Video() {
             </span>
             {/* End Title */}
             {/* Content */}
-            <div className="w-full flex h-full aspect-video overflow-hidden rounded-xl bg-stone-200">
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/kn0iBoEJLL4?si=XrSR5r8-U4eWzhRo"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    className="w-full h-full"
-                ></iframe>
+            <div className="w-full flex h-full aspect-video overflow-hidden rounded-xl bg-stone-100">
+                <video src="/video/ucapan-anniversary-hmsi.mp4" className="w-full h-full" controls></video>
             </div>
             {/* End Content */}
         </section>
